@@ -2,6 +2,9 @@
 A simple CLI task tracker.
 
 # Features
+- N/A
+
+# Plans
 - Add, Update, and Delete tasks
 - Mark a task as in progress or done
 - List all tasks
