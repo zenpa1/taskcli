@@ -1,7 +1,6 @@
 import sys
 from .classmodule import Task
-from .funcmodule import printTask
-from datetime import datetime
+from .funcmodule import *
 
 # def main():
 #     print("In Main")
@@ -15,19 +14,18 @@ from datetime import datetime
 #     my_object = MyClass("Thomas")  # Placeholder class
 #     my_object.say_name()
 
-def main():
-    ctr = 1
-    args = sys.argv[1:]
     # for arg in args:
     #     print("Argument ", ctr, " :: {}".format(arg))
     #     ctr += 1
 
-    userId = args[0]
-    userDescription = args[1]
-    userStatus = args[2]
-    userCreatedAt = str(datetime.today().strftime('%Y-%m-%d %H:%M:%S'))
-    userUpdatedAt = str(datetime.today().strftime('%Y-%m-%d %H:%M:%S'))
-    task = Task(userId, userDescription, userStatus, userCreatedAt, userUpdatedAt)
+def main():
+    args = sys.argv[1:]
+    command = args[0]
+    if command == "add":
+        task = addTask()
+    else:
+        print("Enter a valid command.")   
+
     printTask(task)
 
 if __name__ == "__main__":
