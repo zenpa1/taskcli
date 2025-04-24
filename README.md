@@ -1,4 +1,4 @@
-# task-tracker
+# taskcli
 A simple CLI task tracker.
 
 # Features
@@ -15,4 +15,4 @@ A simple CLI task tracker.
 # Instructions
 - N/A
 
-Developed by zenpa1 with [roadmap.sh](https://roadmap.sh/projects/task-tracker)
+Developed by zenpa1
